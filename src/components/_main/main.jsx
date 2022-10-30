@@ -11,7 +11,7 @@ const Main = () => {
                 <section className="main_app_content_tasks">
                     <ul className="main_app_content_tasks_list">
                         <li className="completed">
-                            <div><input type="checkbox" checked /></div>
+                            <div><input type="checkbox" defaultChecked /></div>
                             <p>Complete online JavaScript course</p>
                             <div><i className="fa-solid fa-xmark"></i></div>
                         </li>
