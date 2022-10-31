@@ -1,52 +1,12 @@
+import TaskForm from "./task-form";
+import TaskList from "./task-list";
+
 const Main = () => {
     return (
         <main className="main_app">
             <div className="main_app_content">
-                <section className="main_app_content_input">
-                    <form action="#">
-                        <input type="text" name="new_task" id="new_task" />
-                    </form>
-                </section>
-
-                <section className="main_app_content_tasks">
-                    <ul className="main_app_content_tasks_list">
-                        <li className="completed">
-                            <div><input type="checkbox" defaultChecked /></div>
-                            <p>Complete online JavaScript course</p>
-                            <div><i className="fa-solid fa-xmark"></i></div>
-                        </li>
-
-                        <li>
-                            <div><input type="checkbox" /></div>
-                            <p>Jog around the park 3x</p>
-                            <div><i className="fa-solid fa-xmark"></i></div>
-                        </li>
-
-                        <li>
-                            <div><input type="checkbox" /></div>
-                            <p>10 minutes meditation</p>
-                            <div><i className="fa-solid fa-xmark"></i></div>
-                        </li>
-
-                        <li>
-                            <div><input type="checkbox" /></div>
-                            <p>Read for 1 hour</p>
-                            <div><i className="fa-solid fa-xmark"></i></div>
-                        </li>
-
-                        <li>
-                            <div><input type="checkbox" /></div>
-                            <p>Pick up groceries</p>
-                            <div><i className="fa-solid fa-xmark"></i></div>
-                        </li>
-
-                        <li>
-                            <div><input type="checkbox" /></div>
-                            <p>Complete Todo App on Frontend Mentor</p>
-                            <div><i className="fa-solid fa-xmark"></i></div>
-                        </li>
-                    </ul>
-                </section>
+                <TaskForm />
+                <TaskList />
 
                 <section className="main_app_content_actions">
                     <div className="main_app_content_actions_count">
